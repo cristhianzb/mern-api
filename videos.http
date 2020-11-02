@@ -1,0 +1,22 @@
+@api = http://localhost:3000
+
+GET {{api}}/videos
+
+###
+GET {{api}}/videos/1
+
+###
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+  "url": "https://www.youtube.com/watch?v=ry1hpm1GXVI",
+  "title": "Binary Numbers",
+  "description": "Binary Numbers"
+}
+
+###
+DELETE  {{api}}/videos/1
+
+###
+PUT {{api}}/videos/1
