@@ -3,7 +3,7 @@
 GET {{api}}/videos
 
 ###
-GET {{api}}/videos/1
+GET {{api}}/videos/5fa6fa8de431b72a8f518cbf
 
 ###
 POST {{api}}/videos
@@ -16,7 +16,22 @@ Content-Type: application/json
 }
 
 ###
-DELETE  {{api}}/videos/1
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+  "url": "https://www.youtube.com/watch?v=OFwskHrtYQ4",
+  "title": "Quantum Wavefunction",
+  "description": "Quantum Wavefunction"
+}
 
 ###
-PUT {{api}}/videos/1
+DELETE  {{api}}/videos/5fa6fa8de431b72a8f518cbf
+
+###
+PUT {{api}}/videos/5fa7015508232a39b4411e65
+Content-Type: application/json
+
+{
+  "title": "Quantum Wavefunction (updated 2)"
+}
